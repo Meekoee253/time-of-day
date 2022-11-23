@@ -96,11 +96,8 @@
 	let myColor ="";
 	let myPic = "";
 
-	//REOMVE THE NEXT LINE WHEN DONE TESTING
-	myHour = 7;
-
 	if(myHour >= 5 && myHour < 12){
-		myGreeting = "Good Afternoon!";
+		myGreeting = "Good Morning!";
 		myColor = "orange";
 		myPic = "morning.jpg"
 
@@ -108,10 +105,16 @@
 		myGreeting = "Good Afternoon!";
 		myColor = "green";
 		myPic = "afternoon.jpg"
+
+	}else if (myHour >= 18 && myHour < 23){
+		myGreeting = "Good Evening!";
+		myColor = "red";
+		myPic = "evening.jpg"	
+
 	}else{
 		//alert ("NOT afternoon!");
 		myGreeting = "NOT Afternoon"
-		myColor ="white";
+		myColor ="purple";
 		myPic = "";
 	}
 
